@@ -67,7 +67,6 @@ export default function ImportRequestForm(): JSX.Element {
       });
 
       handleLoading(false);
-      //   onClose();
     } catch (error) {
       console.log(error);
       toast.error("An error occurred while sending the request", {
@@ -461,11 +460,17 @@ export default function ImportRequestForm(): JSX.Element {
           </div>
         </div>
       </fieldset>
-      <input
+      {/* <input
         type="submit"
-        className="px-4 py-2 rounded-md bg-black text-white hover:bg-primary-blue-dark focus:outline-none focus:ring-primary-blue focus:ring-offset-2"
+        className="px-4 py-2 rounded-md bg-black text-white hover:bg-primary-blue-dark focus:outline-none focus:ring-primary-blue focus:ring-offset-2 mb-2"
         value="Submit"
-      />
+      /> */}
+      <button
+        type="submit"
+        className="px-4 py-2 rounded-md bg-black text-white hover:bg-primary-blue-dark focus:outline-none focus:ring-primary-blue focus:ring-offset-2 mb-2"
+      >
+      Submit
+      </button>
     </form>
   );
 }
